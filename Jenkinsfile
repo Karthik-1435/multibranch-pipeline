@@ -3,13 +3,13 @@ pipeline {
     stages {
         stage ("Build") {
             steps {
-                sh 'docker build -t shaikmustafa/abinay:bus .'
+                sh 'docker build -t karthik621/abinay:bus .'
             }
         }
         
         stage ("Deploy") {
             steps {
-                sh 'docker run -itd --name bus -p 8888:80 shaikmustafa/abinay:bus'
+                sh 'docker run -itd --name bus -p 8888:80 karthik621/abinay:bus'
             }
         }
     }
