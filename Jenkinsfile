@@ -8,7 +8,7 @@ pipeline {
         }
         stage ("Deploy") {
             steps {
-                sh 'docker run -itd --name train -p 9999:80 karthik621/abinay:train'
+                sh 'docker run -itd --name train1 -p 9999:80 karthik621/abinay:train'
             }
         }
     }
